@@ -98,4 +98,8 @@ export class RecipeEditComponent implements OnInit {
     });
   }
 
+  get ingredients () {
+    return <FormArray>this.recipeForm.get('ingredients');
+  }
+
 }
